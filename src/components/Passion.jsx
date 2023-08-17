@@ -2,7 +2,7 @@ import React from 'react'
 
 function Passion() {
     return (
-        <div className='bg-zinc-800 w-screen h-auto  md:p-10 text-white items-center'>
+        <div className='bg-zinc-800 p-6 w-screen h-auto  md:p-10 text-white items-center'>
 
             <h2 className='text-2xl md:p-2 text-white text-center font-serif'>Passion driven</h2>
 

@@ -23,7 +23,7 @@ function Skills() {
 
         </div>
 
-        <div className='w-full grid grid-cols-4 ml-10 md:ml-20 space-y-5 md:space-x-4 md:flex-row text-center items-center'>
+        <div className='w-full grid grid-cols-4 ml-5 md:ml-20 space-y-5 md:space-x-4 md:flex-row text-center items-center'>
 
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" className='w-16 mt-3 md:w-20 hover:scale-125  duration-200 alt="image"' />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" className=' w-16 md:w-20 hover:scale-125 duration-200 alt="image"' />
