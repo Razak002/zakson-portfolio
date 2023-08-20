@@ -13,7 +13,7 @@ function Project() {
           <div className="text-white skills-left ">
             <h3 className='py-4'>Project</h3>
             <h4 className='p-2'>
-              ───&nbsp;&nbsp;Project <strong>04</strong>
+              ───&nbsp;&nbsp;Page<strong>04</strong>
             </h4>
           </div>
           <p className='text-white text-left font-kalam py-3'>I build web apps with well-oriented user interface (UI) and support, fully resonsive  strong data protection, fast loading time and built-in integrations</p>
