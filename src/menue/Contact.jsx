@@ -35,7 +35,7 @@ function Contact() {
         <h2 className='flex text-xl md:2xl justify-center items-center font-serif text-white'>Contact Me!!</h2>
 
         <div className='flex justify-center py-5 items-center text-white'>
-          <p className=' text-white p-2 font-kalam'>I am open to networking with creative developers so feel free to hit me up
+          <p className=' text-white p-2 font-kalam'>I am open to networking with creative developers, so feel free to hit me up
             anytime am available</p>
         </div>
         <div className='space-y-5 py-10'>
