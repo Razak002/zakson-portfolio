@@ -6,7 +6,7 @@ function Passion() {
 
             <h2 className='text-2xl md:p-2 text-white text-center font-serif'>Passion driven</h2>
 
-            <h1 className=' text-white  text-sm text-center '>this is exactly what i know how to do best</h1>
+            <h1 className=' text-white  text-sm font-kalam text-center '>this is exactly what i know how to do best</h1>
 
             <p className='text-center mb-3 font-kalam text-sm'>I develop websites with amazing users experience</p>
 
