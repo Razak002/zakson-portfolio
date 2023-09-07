@@ -87,7 +87,7 @@ function Contact() {
         </div>
         <div className=''>
 
-            <h2 className=' flex justify-center text-white items-center text-sm md:text-xl font-kalam'>You are Free to Dm! 👌👌</h2>
+          <h2 className=' flex justify-center text-white items-center text-sm md:text-xl font-kalam'>You are Free to Dm! 👌👌</h2>
 
           <div className='flex justify-center  mt-3 items-center text-white'><p className='font-kalam'>common let's connect</p></div>
           <div className='flex justify-center  items-center text-2xl w-full'>
