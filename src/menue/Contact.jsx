@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
@@ -27,7 +29,7 @@ function Contact() {
           console.log(error.text);
         });
   };
-
+  const notify = () => toast("Thanks for reaching out");
 
   return (
     <div id='contact'>
@@ -81,7 +83,8 @@ function Contact() {
               />
             </div>
 
-            <button type='submit' value="send" className='text-white font-serif md:text-xl hover:bg-gray-200 hover:text-gray-900 rounded-2xl border-solid border-2 border-gray-600 mt-3 p-2 md:p-3 md:px-8 bg-transparent'>Send message</button>
+            <button type='submit' value="send" onClick={notify} className='text-white font-serif md:text-xl hover:bg-gray-200 hover:text-gray-900 rounded-2xl border-solid border-2 border-gray-600 mt-3 p-2 md:p-3 md:px-8 bg-transparent'>Send message</button>
+            <ToastContainer />
           </form>
 
         </div>

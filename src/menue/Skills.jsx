@@ -33,6 +33,7 @@ function Skills() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" className='w-16 md:w-20 hover:scale-125  duration-200 alt="image"' />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" className='w-16  md:w-20 hover:scale-125 duration-200  alt="image"' />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" className='w-16  md:w-20 hover:scale-125   duration-200 alt="image"' />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" className='w-16 bg-white p-1 md:w-20 hover:scale-125   duration-200 alt="image"' />
 
         </div>
 
@@ -43,3 +44,7 @@ function Skills() {
 }
 
 export default Skills;
+
+
+
+          
