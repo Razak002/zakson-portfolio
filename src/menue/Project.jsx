@@ -26,7 +26,9 @@ function Project() {
                 <div key={id} className='  rounded-xl p-3 '>
                   <div className=''>
                     <a href={demo}>
-                      <img src={image} alt='images' className='w-2/3 md:w-4/6 rounded-xl md:rounded-3xl p-2 md:p-4 ' />
+                      <img src={image} alt='images' className='w-2/3 md:w-4/6 rounded-xl md:rounded-3xl p-2 md:p-4 ' 
+                       loading='lazy'
+                      />
                     </a>
                   </div>
                   <div><h1 className='text-white p-2 md:p-4 text-xl font-serif hover:ani'>{title}</h1></div>
