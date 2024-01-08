@@ -27,6 +27,7 @@ function Hero() {
                 src={imageUrl}
                 alt='razak1'
                 className='w-64 md:w-[40%] md:h-[40%] md:ml-48 rounded-xl'
+                loading='lazy'
               />
             </a>
           </div>
