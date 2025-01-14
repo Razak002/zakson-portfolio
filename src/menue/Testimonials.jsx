@@ -8,10 +8,10 @@ import emoji from '../assets/emoji.webp'
 function Testimonials() {
   return (
     <div className='bg-zinc-800 w-screen gap-5 h-4/5 flex flex-col justify-center items-center'>
-<div className='flex'>
-<h1 className='text-white md:text-2xl font-kalam'>Comments from clients All arround the world</h1>
-<img src={emoji} alt='pic' className='w-20 mb-3'/>
-</div>
+      <div className='flex'>
+        <h1 className='text-white md:text-2xl font-kalam'>Comments from clients All arround the world</h1>
+        <img src={emoji} alt='pic' className='w-20 mb-3' />
+      </div>
       <Marquee direction='right' pauseOnClick='true' speed={80}>
         <div className='flex '>
           <img src={test1} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl md:rounded-3xl' />
@@ -28,7 +28,7 @@ function Testimonials() {
           <img src={test1} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl  md:rounded-3xl' />
           <img src={test2} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl  md:rounded-3xl' />
         </div>
-      </Marquee> 
+      </Marquee>
     </div>
   )
 }
