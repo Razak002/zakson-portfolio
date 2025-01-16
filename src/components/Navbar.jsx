@@ -8,16 +8,12 @@ import { Link } from 'react-scroll'
 function Navbar() {
 
   const [nav, setNav] = useState("false")
-
-
-
-
   const handleNav = () => {
     setNav(!nav)
   }
 
   return (
-    <div className=' flex justify-between h-24 items-center px-4 max-w-[1240px] text-white'>
+    <div className=' flex justify-between h-24 items-center px-4  text-white'>
       <h1 className='w-full pl-3 text-3xl font-kalam'>RA
         <br></br>
         ZAK.</h1>
@@ -33,7 +29,7 @@ function Navbar() {
         {!nav ? <AiOutlineClose size={20} /> : <FaAlignRight size={20} />}
 
       </div>
-      <div className={!nav ? 'fixed left-0 top-0 w-[30%] h-full md:hidden bg-zinc-800   ease-in-out duration-500' : 'fixed left-[-100%]'}>
+      <div className={!nav ? 'fixed left-0 top-0 w-[30%] h-full md:hidden bg-zinc-800 z-10  ease-in-out duration-500' : 'fixed left-[-100%]'}>
 
         <h1 className='w-full text-3xl ml-7 mt-4 outline-none font-kalam'>RA
           <br></br>

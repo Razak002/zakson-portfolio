@@ -55,8 +55,8 @@ export const SOCIAL = [
       id: 3,
       image: comerce,
       title: "03__ E commerce",
-      github: "https://commerce-razak002s-projects.vercel.app/",
-      demo: "https://commerce-razak002.vercel.app/",
+      github: "https://github.com/Razak002/commerce",
+      demo: "https://commerce-razak002s-projects.vercel.app/",
       content: "Our e-commerce solutions are optimized for search engines, ensuring your products reach the right audience. We also offer performance analytics and ongoing support to help you continuously improve and adapt to market changes."
     },
 

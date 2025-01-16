@@ -2,11 +2,6 @@ import { useEffect, useState } from 'react'
 import { BiArrowFromBottom } from 'react-icons/bi'
 
 
-// export const classNames = (...classes) => {
-//   return classes.filter(Boolean).join(' ')
-// }
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }

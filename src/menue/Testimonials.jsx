@@ -7,9 +7,9 @@ import emoji from '../assets/emoji.webp'
 
 function Testimonials() {
   return (
-    <div className='bg-zinc-800 w-screen gap-5 h-4/5 flex flex-col justify-center items-center'>
+    <div className='bg-zinc-800 w-[100%] gap-5 h-4/5 flex flex-col justify-center items-center'>
       <div className='flex'>
-        <h1 className='text-white md:text-2xl font-kalam'>Comments from clients All arround the world</h1>
+        <h1 className='text-white md:text-2xl font-kalam flex justify-center items-center'>Comments from clients All arround the world</h1>
         <img src={emoji} alt='pic' className='w-20 mb-3' />
       </div>
       <Marquee direction='right' pauseOnClick='true' speed={80}>

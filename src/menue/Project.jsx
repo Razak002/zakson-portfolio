@@ -7,7 +7,7 @@ function Project() {
 
   return (
     <div id='projects'>
-      <div className=''>
+      <div className='w-[100%]'>
         <div className='p-2 py-6'>
 
           <div className="text-white skills-left ">
@@ -18,7 +18,7 @@ function Project() {
           </div>
           <p className='text-white text-left font-kalam py-3'>I build web apps with well-oriented user interface (UI) and support, fully resonsive  strong data protection, fast loading time and built-in integrations</p>
         </div>
-        <div className=' bg-zinc-800 w-screen py-4'>
+        <div className=' bg-zinc-800 py-4'>
           <div className='grid md:grid-cols-2 gap-8 ml-7'>
             {WORKS.map(({ id, image, title, github, demo, content }) => {
 

@@ -4,7 +4,7 @@ import React from 'react'
 function About() {
   return (
     <div id='about'>
-      <div className=' md:py-6 justify-center items-center p-2 md:p-20'>
+      <div className='w-[100%] md:py-6 justify-center items-center p-2 md:p-20'>
 
         <div className="text-white skills-left md:text-xl font-Gothic animate__animated animate__zoomIn">
           <h3 className='py-4'>About</h3>

@@ -15,11 +15,6 @@ import Testimonials from "./menue/Testimonials";
 import Explore from "./menue/Explore";
 import { Scroll } from "./components/partials/Scroll";
 
-// import ScrollToTop from "react-scroll-to-top";
-
-
-
-
 
 function App() {
   const [preload, setPreload] = useState(true);
@@ -41,12 +36,11 @@ function App() {
           <Spinner animation="spin" className="animate-spin h-5 w-5 bg-white" />
         </div>
       </>
-   
-   );
+
+    );
   }
   return (
-    <div className="w-full h-screen cursor-pointer text-sm md:text-base ">
-
+    <div className="h-[100vh] w-[100vw]  cursor-pointer text-sm md:text-base ">
       <Navbar />
       <Hero />
       <SlideVertical />
@@ -59,7 +53,7 @@ function App() {
       <Contact />
       <Particle />
       {/* <ScrollToTop smooth color="white" style={{backgroundColor: "transparent"}} /> */}
-   <Scroll />
+      <Scroll />
     </div>
   );
 }

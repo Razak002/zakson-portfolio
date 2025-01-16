@@ -33,7 +33,7 @@ function Contact() {
 
   return (
     <div id='contact'>
-      <div className='w-screen h-96 p-5 md:p-10'>
+      <div className='w-[100%] h-96 p-5 md:p-10'>
         <h2 className='flex text-xl md:2xl justify-center items-center font-serif text-white'>Contact Me!!</h2>
 
         <div className='flex justify-center py-5 items-center text-white'>

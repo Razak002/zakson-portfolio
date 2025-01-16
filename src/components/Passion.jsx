@@ -1,23 +1,41 @@
-import React from 'react'
+import React from 'react';
 
 function Passion() {
-    return (
-        <div className='bg-zinc-800 p-6 w-screen h-auto  md:p-10 text-white items-center'>
+  return (
+    <div className="bg-zinc-800 p-6 w-[100%] h-auto md:p-10 text-white flex flex-col items-center">
+      
+      {/* Title Section */}
+      <h2 className="text-3xl md:text-4xl text-white text-center font-serif font-bold mb-4">
+        Passion Driven
+      </h2>
+      
+      <h1 className="text-white text-lg md:text-xl font-kalam text-center mb-2">
+        This is exactly what I know how to do best
+      </h1>
 
-            <h2 className='text-2xl md:p-2 text-white text-center font-serif'>Passion driven</h2>
+      <p className="text-center mb-6 text-sm md:text-base font-kalam">
+        I develop websites with amazing user experiences.
+      </p>
 
-            <h1 className=' text-white  text-sm font-kalam text-center '>this is exactly what i know how to do best</h1>
+      {/* Divider Line */}
+      <div className="w-24 h-1 bg-white my-4"></div>
 
-            <p className='text-center mb-3 font-kalam text-sm'>I develop websites with amazing users experience</p>
-
-            <div className='absolute mb-10 left-1/2 animate__animated animate__fadeInDown animate__slow -ml-0.5 w-0.5 h-[20%] md:h-[20%] lg:h-[25%]  bg-gray-200 border-0'></div>
-            <div className='py-7 mt-10 md:mt-20 '>
-                <h2 className=' text-white text-sm text-center font-kalam mt-36 md:mt-40'>I interpret amazing ideas into reality</h2>
-                <h2 className='text-center font-kalam '>on the Web</h2>
-                <p className='text-center text-sm font-kalam'>following strategyies to produce the best users experience</p>
-            </div>
-        </div>
-    )
+      {/* Secondary Section */}
+      <div className="py-7 mt-10 md:mt-20">
+        <h2 className="text-white text-lg md:text-xl text-center font-kalam mb-2">
+          I interpret amazing ideas into reality
+        </h2>
+        
+        <h2 className="text-white text-xl text-center font-kalam mb-4">
+          On the Web
+        </h2>
+        
+        <p className="text-center text-sm md:text-base font-kalam">
+          Following strategies to produce the best user experiences.
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default Passion
+export default Passion;

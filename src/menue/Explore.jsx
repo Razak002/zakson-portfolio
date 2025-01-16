@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 function Explore() {
   return (
-    <div className='w-screen h-60 flex md:text-xl justify-center items-center md:p-52 '>
+    <div className='w-[100%] h-60 flex md:text-xl justify-center items-center md:p-52 '>
         <h2 className=' text-white'>Explore more on my Github page </h2>
         <div className='ml-9 mt-3 down-arrow'>
             <a href='https://github.com/Razak002' >
