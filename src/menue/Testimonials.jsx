@@ -13,7 +13,7 @@ function Testimonials() {
         <img src={emoji} alt='pic' className='w-20 mb-3' />
       </div>
       <Marquee direction='right' pauseOnClick='true' speed={80}>
-        <div className='flex '>
+        <div className='flex'>
           <img src={test1} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl md:rounded-3xl' />
           <img src={test2} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl md:rounded-3xl' />
           <img src={test1} alt='pic' className='w-80 md:w-96 p-2 md:p-4 rounded-2xl md:rounded-3xl' />

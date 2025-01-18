@@ -2,7 +2,8 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import serv1 from '../assets/serv1.png'
 import comerce from '../assets/comerce.png'
 import gym from '../assets/gym.png'
-import port from '../assets/port.png'
+
+import marhaba from '../assets/marhaba.png'
 
 export const SOCIAL = [
     {
@@ -62,11 +63,11 @@ export const SOCIAL = [
 
     {
       id: 4,
-      image: port,
-      title: "04__Portfolio website",
-      github: "https://github.com/Razak002/Belema-portfolio",
-      demo: "https://belema-portfolio.vercel.app/",
-      content: "from web development to branding to app development i have successfully delivered projects that span industries and technologies. We take pride in our ability to adapt and excel in any creative endeavor."
+      image: marhaba,
+      title: "04__wedding website",
+      github: "https://github.com/Razak002/marhaba",
+      demo: "https://marhaba-one.vercel.app/",
+      content: "from web development to branding i have successfully delivered projects  on events, ceremonies and entertainments. We take pride in our ability to adapt and excel in any creative endeavor."
     },
 
 
