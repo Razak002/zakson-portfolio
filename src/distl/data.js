@@ -2,6 +2,7 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import serv1 from '../assets/serv1.png'
 import comerce from '../assets/comerce.png'
 import gym from '../assets/gym.png'
+import gallery from '../assets/gallery.png'
 
 import marhaba from '../assets/marhaba.png'
 
@@ -37,11 +38,11 @@ export const SOCIAL = [
 
     {
       id: 1,
-      image: serv1,
-      title: "01__ Food recipe",
-      github: "https://github.com/Razak002/Recipe",
-      demo: "https://recipe-gldpaf1wo-razak002.vercel.app/ ",
-      content: "Overall, recipe apps offer a convenient and fun way to explore new dishes, cook up family favorites, and simplify meal planning anyone can become a master chef in their own kitchen."
+      image: gallery,
+      title: "01__ Image gallery",
+      github: "https://github.com/Razak002/Gallery",
+      demo: "https://gallery-rho-fawn.vercel.app/",
+      content: "Overall, photo gallery blog apps offer a convenient and fun way to explore new epic shot styles."
     },
 
     {
