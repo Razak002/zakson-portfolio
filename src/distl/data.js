@@ -1,10 +1,9 @@
 import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
-import serv1 from '../assets/serv1.png'
 import comerce from '../assets/comerce.png'
 import gym from '../assets/gym.png'
 import gallery from '../assets/gallery.png'
+import business from '../assets/business.png'
 
-import marhaba from '../assets/marhaba.png'
 
 export const SOCIAL = [
     {
@@ -64,11 +63,11 @@ export const SOCIAL = [
 
     {
       id: 4,
-      image: marhaba,
-      title: "04__wedding website",
+      image: business,
+      title: "04__ Ai model landing page",
       github: "https://github.com/Razak002/marhaba",
       demo: "https://marhaba-one.vercel.app/",
-      content: "from web development to branding i have successfully delivered projects  on events, ceremonies and entertainments. We take pride in our ability to adapt and excel in any creative endeavor."
+      content: " Artificial Intelligence (AI) has emerged as the most transformative technology, offering unprecedented opportunities to streamline operations, enhance decision-making, and achieve goals with remarkable efficiency."
     },
 
 
