@@ -1,6 +1,6 @@
 import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import comerce from '../assets/comerce.png'
-import gym from '../assets/gym.png'
+import finflow from '../assets/finflow.png'
 import gallery from '../assets/gallery.png'
 import business from '../assets/business.png'
 
@@ -46,11 +46,11 @@ export const SOCIAL = [
 
     {
       id: 2,
-      image: gym,
-      title: "02__Gymnastics website",
-      github: "https://github.com/Razak002/gymst539",
-      demo: "https://gymst539.vercel.app/",
-      content: "Looking for some extra motivation and camaraderie? Join our group fitness classes. From high-energy spin sessions to peaceful yoga and everything in between, our group fitness program offers a diverse range of classes suitable for all fitness levels. Get ready to sweat, smile, and connect with others on the same journey."
+      image: finflow,
+      title: "02__Fintech dashboard",
+      github: "https://github.com/Razak002/fin-flow",
+      demo: "https://fin-flow-sandy.vercel.app/",
+      content: "a comprehensive fintech dashboard interface that provides users with a centralized platform for managing their financial data, transactions, and analytics. The dashboard combines modern UI/UX principles with robust financial data visualization to deliver an intuitive banking and investment management experience."
     },
     {
       id: 3,
