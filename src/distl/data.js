@@ -3,7 +3,7 @@ import comerce from '../assets/comerce.png'
 import finflow from '../assets/finflow.png'
 import gallery from '../assets/gallery.png'
 import business from '../assets/business.png'
-
+import swapit from '../assets/swapit.png'
 
 export const SOCIAL = [
     {
@@ -37,11 +37,11 @@ export const SOCIAL = [
 
     {
       id: 1,
-      image: gallery,
-      title: "01__ Image gallery",
-      github: "https://github.com/Razak002/Gallery",
-      demo: "https://gallery-rho-fawn.vercel.app/",
-      content: "Overall, photo gallery blog apps offer a convenient and fun way to explore new epic shot styles."
+      image: swapit,
+      title: "01__ Crypto wallet",
+      github: "https://github.com/Razak002/Deep",
+      demo: "https://deep-jet.vercel.app/",
+      content: "Experience the future of digital finance with our modern crypto wallet engineered for swift, secure, and effortless transactions in seconds."
     },
 
     {
@@ -50,7 +50,7 @@ export const SOCIAL = [
       title: "02__Fintech dashboard",
       github: "https://github.com/Razak002/fin-flow",
       demo: "https://fin-flow-sandy.vercel.app/",
-      content: "a comprehensive fintech dashboard interface that provides users with a centralized platform for managing their financial data, transactions, and analytics. The dashboard combines modern UI/UX principles with robust financial data visualization to deliver an intuitive banking and investment management experience."
+      content: "A comprehensive fintech dashboard interface that provides users with a centralized platform for managing their financial data, transactions, and analytics. The dashboard combines modern UI/UX principles with robust financial data visualization to deliver an intuitive banking and investment management experience."
     },
     {
       id: 3,
