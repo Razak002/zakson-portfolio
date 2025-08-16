@@ -1,21 +1,60 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 function Hero() {
-  const imageUrl = 'https://i.ibb.co/BK3vZT84/razak2.png';
+  const imageUrl = "https://i.ibb.co/BK3vZT84/razak2.png";
+
+  // Variants for staggered animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 }
+    }
+  };
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  };
 
   return (
-    <div id="main" className="bg-gradient-to-r min-h-screen flex items-center justify-center mt-10 sm:mt-1">
-      <div className="p-6 md:flex md:items-center md:justify-between md:gap-10  max-w-6xl mx-auto">
-
-        <div className="md:w-1/2 text-center md:text-left space-y-5">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-serif font-bold">
+    <div
+      id="main"
+      className="bg-gradient-to-r min-h-screen flex items-center justify-center mt-20 sm:mt-10"
+    >
+      <motion.div
+        className="p-6 md:flex md:items-center md:justify-between md:gap-10 max-w-6xl mx-auto"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        {/* Text Section */}
+        <motion.div
+          className="md:w-1/2 text-center md:text-left space-y-5"
+          variants={container}
+        >
+          <motion.h1
+            variants={fadeInUp}
+            className="text-white text-4xl md:text-5xl lg:text-6xl font-serif font-bold"
+          >
             Aliyu Abdulrazak
-          </h1>
-          <p className="text-white text-lg md:text-xl font-kalam animate__animated animate__fadeInLeft animate__slow">
-            I'm a productive Software Developer with great passions. I am self-motivated, enthusiastic, and always ready to work in teams and to learn more.
-          </p>
-          <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+          </motion.h1>
+
+          <motion.p
+            variants={fadeInUp}
+            className="text-white text-lg md:text-xl font-kalam"
+          >
+            I'm a productive Software Developer with great passions. I am
+            self-motivated, enthusiastic, and always ready to work in teams and
+            to learn more.
+          </motion.p>
+
+          <motion.div
+            variants={fadeInUp}
+            className="flex flex-wrap justify-center md:justify-start gap-4 pt-2"
+          >
             <Link
               to="projects"
               smooth={true}
@@ -32,26 +71,33 @@ function Hero() {
             >
               Contact Me
             </Link>
-          </div>
-        </div>
-        <div className="md:w-1/2 flex justify-center relative animate-fade-in mt-20 sm:mt-10">
-          <div className="relative group">
-            <img
-              src={imageUrl}
-              alt="Aliyu Abdulrazak"
-              className="w-64 sm:w-80 md:w-96 lg:w-[80%] rounded-2xl shadow-2xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 rounded-2xl "></div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-      </div>
+        {/* Image Section */}
+        <motion.div
+          className="md:w-1/2 flex justify-center relative mt-20 sm:mt-10"
+          variants={fadeInUp}
+          whileHover={{ scale: 1.05, rotate: 2 }}
+          transition={{ type: "spring", stiffness: 120 }}
+        >
+          <motion.img
+            src={imageUrl}
+            alt="Aliyu Abdulrazak"
+            className="w-64 sm:w-80 md:w-96 lg:w-[80%] rounded-2xl shadow-2xl"
+            loading="lazy"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          />
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
 
 export default Hero;
+
 
 // import React from "react";
 // import { Link } from "react-scroll";

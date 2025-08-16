@@ -115,13 +115,15 @@
 
 // export default Contact
 
-import React, { useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import emailjs from '@emailjs/browser';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
-import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
-import { SOCIAL } from '../distl/data';
+
+import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { SOCIAL } from "../distl/data";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -131,18 +133,17 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_zr7xrqh',
-        'template_o1coxm3',
+        "service_u79bfpe",
+        "template_mw7c1fv",
         form.current,
-        '7eMxv6VX0s2ThWYN9'
+        "opnD1ADvcL3X9uBex"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           toast.success("Thanks for reaching out! I'll get back to you soon.");
+          form.current.reset();
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           toast.error("Oops! Something went wrong. Please try again.");
         }
       );
@@ -151,34 +152,50 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-12 "
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-12"
     >
       {/* Heading */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center mb-10"
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
           Contact Me
         </h2>
-        <p className="text-gray-200 max-w-xl mx-auto font-kalam">
-          I’m open to networking with creative developers, so feel free to hit me
-          up anytime — I’m available and ready to collaborate!
+        <p className="text-gray-200 max-w-xl mx-auto font-kalam text-sm sm:text-base">
+          I’m open to networking with creative developers, so feel free to hit
+          me up anytime — I’m available and ready to collaborate!
         </p>
-      </div>
+      </motion.div>
 
       {/* Contact Info + Form */}
       <div className="w-full max-w-5xl grid md:grid-cols-2 gap-8">
         {/* Contact Info */}
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-white space-y-6 shadow-lg">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-white space-y-6 shadow-lg"
+        >
           <div className="flex items-center space-x-4">
-            <HiOutlineLocationMarker size={28} className="" />
-            <p className="font-kalam">Abuja, Nigeria</p>
+            <HiOutlineLocationMarker size={28} />
+            <p className="font-kalam text-sm sm:text-base">Abuja, Nigeria</p>
           </div>
           <div className="flex items-center space-x-4">
-            <AiOutlinePhone size={28} className="" />
-            <p className="font-kalam">+234 814 016 5624</p>
+            <AiOutlinePhone size={28} />
+            <p className="font-kalam text-sm sm:text-base">
+              +234 814 016 5624
+            </p>
           </div>
           <div className="flex items-center space-x-4">
-            <AiOutlineMail size={28} className="" />
-            <p className="font-kalam">aliyuabdulrazaks539@gmail.com</p>
+            <AiOutlineMail size={28} />
+            <p className="font-kalam text-sm sm:text-base">
+              aliyuabdulrazaks539@gmail.com
+            </p>
           </div>
 
           {/* Social Links */}
@@ -186,26 +203,32 @@ function Contact() {
             <h3 className="text-lg font-semibold mb-4 font-kalam">
               Let’s Connect
             </h3>
-            <div className="flex space-x-4 text-2xl">
+            <div className="flex space-x-4 text-xl sm:text-2xl">
               {SOCIAL.map(({ id, link, icon }) => (
-                <a
+                <motion.a
                   key={id}
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-gray-500 hover:scale-110 transition"
+                  whileHover={{ scale: 1.2, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="text-gray-300 hover:text-gray-500 transition"
                 >
                   {icon}
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Form */}
-        <form
+        <motion.form
           ref={form}
           onSubmit={sendEmail}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
           className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg space-y-4"
         >
           <div>
@@ -216,7 +239,7 @@ function Contact() {
               type="text"
               name="user_name"
               required
-              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-pink-400"
+              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white text-sm sm:text-base focus:outline-none focus:border-pink-400"
             />
           </div>
           <div>
@@ -227,7 +250,7 @@ function Contact() {
               type="email"
               name="user_email"
               required
-              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-pink-400"
+              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white text-sm sm:text-base focus:outline-none focus:border-pink-400"
             />
           </div>
           <div>
@@ -237,7 +260,7 @@ function Contact() {
             <input
               type="text"
               name="user_subject"
-              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-pink-400"
+              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white text-sm sm:text-base focus:outline-none focus:border-pink-400"
             />
           </div>
           <div>
@@ -248,23 +271,30 @@ function Contact() {
               name="message"
               rows="4"
               required
-              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-gray-400"
+              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white text-sm sm:text-base focus:outline-none focus:border-gray-400"
             ></textarea>
           </div>
 
-          <button
+          <motion.button
             type="submit"
-            className="w-full py-3 rounded-lg bg-gray-500 hover:bg-gray-600 text-white font-semibold shadow-md transition"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white font-semibold shadow-md transition"
           >
             Send Message
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
 
       {/* Footer */}
-      <div className="underline mt-10 text-gray-300 text-sm">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="underline mt-10 text-gray-300 text-xs sm:text-sm"
+      >
         © {new Date().getFullYear()} Aliyu Abdulrazak. All Rights Reserved.
-      </div>
+      </motion.div>
 
       <ToastContainer position="bottom-right" />
     </div>
@@ -272,3 +302,4 @@ function Contact() {
 }
 
 export default Contact;
+

@@ -108,9 +108,11 @@
 // }
 
 // export default Testimonials;
+
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Avatar from "react-avatar";
+import { motion } from "framer-motion";
 
 const realNames = [
   "Sarah Johnson",
@@ -159,53 +161,77 @@ const testimonials = realNames.map((name, index) => ({
 
 function Testimonials() {
   return (
-    <div className=" w-full py-12 flex flex-col items-center">
-      <div className="flex flex-col items-center mb-6">
-        <h1 className="text-white text-2xl md:text-3xl font-kalam flex items-center">
+    <section className="w-full py-12 flex flex-col items-center px-4">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="flex flex-col items-center mb-6 text-center"
+      >
+        <h1 className="text-white text-xl sm:text-2xl md:text-3xl font-kalam flex items-center justify-center">
           Comments from clients all around the world{" "}
           <span className="ml-2">😎</span>
         </h1>
-      </div>
+      </motion.div>
 
       {/* First Row */}
       <Marquee pauseOnClick={true} speed={60} gradient={false}>
         {testimonials.slice(0, 6).map((t, i) => (
-          <div
+          <motion.div
             key={i}
-             className="bg-white/5 backdrop-blur-lg border text-white border-pink-500/20 shadow-lg rounded-2xl p-4 m-3 w-72 hover:border-pink-500/40 transition"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white/5 backdrop-blur-lg border text-white border-pink-500/20 shadow-lg rounded-2xl p-4 m-3 w-64 sm:w-72 hover:border-pink-500/40 transition"
           >
             <div className="flex items-center mb-3">
               <Avatar name={t.name} size="40" round={true} className="mr-3" />
               <div>
-                <h3 className="font-semibold">{t.name}</h3>
-                <p className="text-sm text-gray-300">@{t.username}</p>
+                <h3 className="font-semibold text-sm sm:text-base">{t.name}</h3>
+                <p className="text-xs sm:text-sm text-gray-300">@{t.username}</p>
               </div>
             </div>
-            <p className="text-sm italic">"{t.comment}"</p>
-          </div>
+            <p className="text-xs sm:text-sm italic leading-relaxed">
+              "{t.comment}"
+            </p>
+          </motion.div>
         ))}
       </Marquee>
 
       {/* Second Row */}
       <Marquee direction="right" pauseOnClick={true} speed={60} gradient={false}>
         {testimonials.slice(6, 12).map((t, i) => (
-          <div
+          <motion.div
             key={i}
-             className="bg-white/5 backdrop-blur-lg border text-white border-pink-500/20 shadow-lg rounded-2xl p-4 m-3 w-72 hover:border-pink-500/40 transition"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white/5 backdrop-blur-lg border text-white border-pink-500/20 shadow-lg rounded-2xl p-4 m-3 w-64 sm:w-72 hover:border-pink-500/40 transition"
           >
             <div className="flex items-center mb-3">
               <Avatar name={t.name} size="40" round={true} className="mr-3" />
               <div>
-                <h3 className="font-semibold">{t.name}</h3>
-                <p className="text-sm text-gray-300">@{t.username}</p>
+                <h3 className="font-semibold text-sm sm:text-base">{t.name}</h3>
+                <p className="text-xs sm:text-sm text-gray-300">@{t.username}</p>
               </div>
             </div>
-            <p className="text-sm italic">"{t.comment}"</p>
-          </div>
+            <p className="text-xs sm:text-sm italic leading-relaxed">
+              "{t.comment}"
+            </p>
+          </motion.div>
         ))}
       </Marquee>
-    </div>
+    </section>
   );
 }
 
 export default Testimonials;
+
