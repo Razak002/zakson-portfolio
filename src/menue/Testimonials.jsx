@@ -159,7 +159,7 @@ const testimonials = realNames.map((name, index) => ({
 
 function Testimonials() {
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 w-full py-12 flex flex-col items-center">
+    <div className=" w-full py-12 flex flex-col items-center">
       <div className="flex flex-col items-center mb-6">
         <h1 className="text-white text-2xl md:text-3xl font-kalam flex items-center">
           Comments from clients all around the world{" "}

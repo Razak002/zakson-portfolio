@@ -151,7 +151,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-12 bg-gradient-to-b from-gray-900 via-black to-gray-900"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-12 "
     >
       {/* Heading */}
       <div className="text-center mb-10">
@@ -169,15 +169,15 @@ function Contact() {
         {/* Contact Info */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-white space-y-6 shadow-lg">
           <div className="flex items-center space-x-4">
-            <HiOutlineLocationMarker size={28} className="text-pink-400" />
+            <HiOutlineLocationMarker size={28} className="" />
             <p className="font-kalam">Abuja, Nigeria</p>
           </div>
           <div className="flex items-center space-x-4">
-            <AiOutlinePhone size={28} className="text-pink-400" />
+            <AiOutlinePhone size={28} className="" />
             <p className="font-kalam">+234 814 016 5624</p>
           </div>
           <div className="flex items-center space-x-4">
-            <AiOutlineMail size={28} className="text-pink-400" />
+            <AiOutlineMail size={28} className="" />
             <p className="font-kalam">aliyuabdulrazaks539@gmail.com</p>
           </div>
 
@@ -193,7 +193,7 @@ function Contact() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-pink-500 hover:scale-110 transition"
+                  className="text-gray-300 hover:text-gray-500 hover:scale-110 transition"
                 >
                   {icon}
                 </a>
@@ -248,13 +248,13 @@ function Contact() {
               name="message"
               rows="4"
               required
-              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-pink-400"
+              className="w-full p-3 rounded-lg bg-white/5 border border-gray-500 text-white focus:outline-none focus:border-gray-400"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-3 rounded-lg bg-pink-500 hover:bg-pink-600 text-white font-semibold shadow-md transition"
+            className="w-full py-3 rounded-lg bg-gray-500 hover:bg-gray-600 text-white font-semibold shadow-md transition"
           >
             Send Message
           </button>
@@ -262,7 +262,7 @@ function Contact() {
       </div>
 
       {/* Footer */}
-      <div className="mt-10 text-gray-300 text-sm">
+      <div className="underline mt-10 text-gray-300 text-sm">
         © {new Date().getFullYear()} Aliyu Abdulrazak. All Rights Reserved.
       </div>
 

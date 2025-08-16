@@ -43,13 +43,20 @@ function App() {
     <div className="h-[100vh] w-[100vw]  cursor-pointer text-sm md:text-base ">
       <Navbar />
       <Hero />
+      <hr></hr>
       <SlideVertical />
       <Passion />
+      <hr></hr>
       <About />
+      <hr></hr>
       <Skills />
+      <hr></hr>
       <Project />
+      <hr></hr>
       <Explore />
+      <hr></hr>
       <Testimonials />
+      <hr></hr>
       <Contact />
       <Particle />
       {/* <ScrollToTop smooth color="white" style={{backgroundColor: "transparent"}} /> */}

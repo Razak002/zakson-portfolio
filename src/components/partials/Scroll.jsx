@@ -84,10 +84,10 @@ export const Scroll = () => {
         onClick={scrollToTop}
         className={classNames(
           isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0',
-          'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500',
-          'backdrop-blur-md shadow-lg shadow-pink-500/30',
+          'bg-gradient-to-r from-gray-500 to-gray-500 hover:from-gray-200 hover:to-gray-600',
+          'backdrop-blur-md shadow-lg shadow-gray-500/30',
           'transition-all duration-300 ease-in-out transform hover:scale-110',
-          'focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2',
+          'focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2',
           'inline-flex items-center justify-center rounded-full p-3 text-white'
         )}
       >

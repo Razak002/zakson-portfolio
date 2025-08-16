@@ -74,15 +74,9 @@ function Project() {
   return (
     <div
       id="projects"
-      className="relative w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden"
+      className="relative w-full overflow-hidden"
     >
-      {/* Pink-Purple Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
-
-      {/* Soft Glow Blobs */}
-      <div className="absolute -top-40 -left-40 w-[30rem] h-[30rem] bg-pink-500/20 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-purple-500/20 rounded-full blur-[120px]"></div>
-
+      <div className="absolute inset-0  pointer-events-none"></div>
       <div className="relative p-2 py-12 z-10 max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8">
@@ -103,7 +97,7 @@ function Project() {
           {WORKS.map(({ id, image, title, github, demo, content }) => (
             <div
               key={id}
-              className="bg-gradient-to-tr from-pink-500/10 via-gray-800/50 to-purple-500/10 rounded-2xl shadow-lg backdrop-blur-lg p-4 transition-transform transform hover:scale-105 duration-300 hover:shadow-[0_0_25px_rgba(236,72,150,0.4)]"
+              className="bg-gradient-to-tr from-gray-500/10 via-gray-800/50 to-gray-500/10 rounded-2xl shadow-lg backdrop-blur-lg p-4 transition-transform transform hover:scale-105 duration-300 hover:shadow-gray-500"
             >
               {/* Project Image */}
               <a href={demo} target="_blank" rel="noopener noreferrer">

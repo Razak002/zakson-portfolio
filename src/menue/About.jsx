@@ -32,9 +32,9 @@
 //          <p className='text-white text-sm font-kalam'> Web development is not just a job for me; it's my passion. Outside of work, I enjoy exploring new web technologies and experimenting with personal projects. I'm also an avid blogger, where I share insights and tips on web development to contribute to the larger developer community.    </p>
 
 
-    
+
 //       </div>
-      
+
 //     </div>
 //   )
 // }
@@ -45,16 +45,12 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about" className="relative overflow-hidden py-16 px-6 md:px-20 bg-gradient-to-b from-gray-900 via-black to-gray-900">
-      {/* Background Accent Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-indigo-500/10 blur-3xl"></div>
+    <section id="about" className="relative overflow-hidden py-16 px-6 md:px-20 ">
 
-      {/* Content */}
       <div className="relative max-w-5xl mx-auto text-white space-y-10">
-        
-        {/* Header */}
-        <div className="text-center md:text-left animate-fade-in-down">
-          <h3 className="text-4xl font-serif font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+
+        <div className="text-center animate-fade-in-down">
+          <h3 className="text-4xl font-serif font-bold bg-gradient-to-r from-gray-400 to-gray-100 bg-clip-text text-transparent">
             About
           </h3>
           <h4 className="text-sm opacity-70 mt-2">
@@ -64,39 +60,39 @@ function About() {
 
         {/* Intro */}
         <p className="font-kalam text-lg leading-relaxed animate-fade-in-up max-w-3xl mx-auto md:mx-0">
-          I'm <span className="text-pink-400 font-semibold">Aliyu Abdulrazak</span>, 
-          a passionate web developer with years of experience crafting beautiful and functional websites. 
+          I'm <span className="underline font-semibold">Aliyu Abdulrazak</span>,
+          a passionate web developer with years of experience crafting beautiful and functional websites.
           I love bringing ideas to life through code and creating seamless online experiences.
-          I've worked with clients across diverse industries, helping them build a strong online presence 
+          I've worked with clients across diverse industries, helping them build a strong online presence
           while staying ahead with the latest web technologies.
         </p>
 
         {/* Approach */}
         <div className="space-y-3 animate-fade-in-up delay-150">
-          <h2 className="text-2xl font-openSans text-purple-400">Approach & Philosophy</h2>
+          <h2 className="text-2xl font-openSans ">Approach & Philosophy</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            I believe in a <span className="text-pink-300 font-semibold">user-centric approach</span> to web development. 
-            My goal is to create websites that are visually appealing, intuitive, fast, and accessible on all devices. 
+            I believe in a <span className="underline font-semibold">user-centric approach</span> to web development.
+            My goal is to create websites that are visually appealing, intuitive, fast, and accessible on all devices.
             I prioritize clean, maintainable code that follows industry best practices.
           </p>
         </div>
 
         {/* Collaboration */}
         <div className="space-y-3 animate-fade-in-up delay-300">
-          <h2 className="text-2xl font-openSans text-purple-400">Collaboration & Communication</h2>
+          <h2 className="text-2xl font-openSans ">Collaboration & Communication</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            I thrive in collaborative environments, working closely with clients, designers, and teams. 
-            I actively listen to ideas, translate them into functional designs, 
+            I thrive in collaborative environments, working closely with clients, designers, and teams.
+            I actively listen to ideas, translate them into functional designs,
             and communicate technical concepts in a clear and approachable way.
           </p>
         </div>
 
         {/* Passion */}
         <div className="space-y-3 animate-fade-in-up delay-500">
-          <h2 className="text-2xl font-openSans text-purple-400">Passion & Personal Interests</h2>
+          <h2 className="text-2xl font-openSans">Passion & Personal Interests</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            Web development isn’t just my job — it’s my <span className="text-pink-300 font-semibold">passion</span>. 
-            Outside of work, I explore new technologies, work on personal projects, 
+            Web development isn’t just my job — it’s my <span className="underline font-semibold">passion</span>.
+            Outside of work, I explore new technologies, work on personal projects,
             and share knowledge through blogging to help the developer community grow.
           </p>
         </div>

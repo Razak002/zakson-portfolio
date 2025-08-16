@@ -44,14 +44,12 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="relative p-6 w-full h-auto md:p-20 text-white bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden"
+      className="relative p-6 w-full h-auto md:p-20 text-white  overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
-      {/* Radial Glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[80%] h-[80%] bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-indigo-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 "></div>
       {/* Title Section */}
       <div className="relative text-center mb-12 z-10">
-        <h3 className="text-4xl md:text-5xl font-serif font-bold tracking-wide drop-shadow-lg">
+        <h3 className="text-4xl md:text-5xl font-serif font-bold bg-gradient-to-r from-gray-400 to-gray-100 bg-clip-text text-transparent tracking-wide drop-shadow-lg">
           Skills
         </h3>
         <h4 className="text-lg mt-3 text-gray-300">
@@ -127,7 +125,7 @@ function Skills() {
         ].map((skill, index) => (
           <div
             key={index}
-            className="flex justify-center items-center bg-gradient-to-tr from-pink-300/10 via-gray-800/30 to-purple-300/10 backdrop-blur-lg rounded-xl p-4 transition-transform transform hover:scale-110 hover:shadow-[0_0_20px_rgba(236,72,153,0.5)] duration-300 shadow-lg"
+            className="flex justify-center items-center bg-gradient-to-tr from-gray-300/10 via-gray-800/30 to-gray-300/10 backdrop-blur-lg rounded-xl p-4 transition-transform transform hover:scale-110 hover:shadow-gray-500 duration-300 shadow-lg"
           >
             <img
               src={skill.src}

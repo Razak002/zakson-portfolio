@@ -77,9 +77,9 @@ function Navbar() {
   ];
 
   return (
-    <div className="flex justify-between h-20 items-center px-6 text-white fixed w-full top-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-black shadow-lg">
+    <div className="flex justify-between h-20 items-center px-6 text-white fixed w-full top-0 z-50  shadow-lg">
       {/* Logo */}
-      <h1 className="text-3xl font-extrabold font-kalam bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent tracking-wider cursor-pointer">
+      <h1 className="text-3xl font-extrabold font-kalam bg-gradient-to-r from-gray-500 via-white to-gray-800 bg-clip-text text-transparent tracking-wider cursor-pointer">
         RA<br />ZAK.
       </h1>
 
@@ -91,11 +91,11 @@ function Navbar() {
               to={link.id}
               smooth={true}
               duration={800}
-              className="cursor-pointer transition-colors duration-300 hover:text-pink-400"
+              className="cursor-pointer transition-colors duration-300 hover:text-gray-400"
             >
               {link.label}
             </Link>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gray-400 transition-all group-hover:w-full"></span>
           </li>
         ))}
       </ul>

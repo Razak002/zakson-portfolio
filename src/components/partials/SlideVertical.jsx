@@ -33,12 +33,12 @@ function SlideVertical() {
   });
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 100); // delay for smoothness
+    const timer = setTimeout(() => setIsVisible(true), 100); 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="hidden md:flex items-center ml-4">
+    <div className="hidden md:flex items-center ml-4 mt-2">
       <div
         className={`flex items-center gap-3 bg-white/10 px-4 py-2 rounded-lg shadow-lg backdrop-blur-md border border-white/10 transition-all duration-700 ease-out hover:bg-white/20 ${
           isVisible
@@ -48,7 +48,7 @@ function SlideVertical() {
       >
         <BsCalendarDate
           size={22}
-          className="text-pink-400 animate-bounce"
+          className="text-gray-400 animate-bounce"
         />
         <span className="text-white font-medium tracking-wide">
           {formattedDate}
