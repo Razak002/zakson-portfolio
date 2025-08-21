@@ -161,7 +161,7 @@ const testimonials = realNames.map((name, index) => ({
 
 function Testimonials() {
   return (
-    <section className="w-full py-12 flex flex-col items-center px-4">
+    <section className="w-full py-12 flex flex-col items-center sm:px-4">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -177,7 +177,7 @@ function Testimonials() {
       </motion.div>
 
       {/* First Row */}
-      <Marquee pauseOnClick={true} speed={60} gradient={false}>
+      <Marquee pauseOnClick={true} speed={60} gradient={false} className="overflow-y-hidden">
         {testimonials.slice(0, 6).map((t, i) => (
           <motion.div
             key={i}
@@ -204,7 +204,7 @@ function Testimonials() {
       </Marquee>
 
       {/* Second Row */}
-      <Marquee direction="right" pauseOnClick={true} speed={60} gradient={false}>
+      <Marquee direction="right" pauseOnClick={true} speed={60} gradient={false} className="overflow-y-hidden">
         {testimonials.slice(6, 12).map((t, i) => (
           <motion.div
             key={i}

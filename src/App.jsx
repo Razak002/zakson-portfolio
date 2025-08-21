@@ -40,7 +40,7 @@ function App() {
     );
   }
   return (
-    <div className="h-[100vh] w-[100vw]  cursor-pointer text-sm md:text-base ">
+    <div className="w-full h-full cursor-pointer text-sm md:text-base">
       <Navbar />
       <Hero />
       <hr></hr>
