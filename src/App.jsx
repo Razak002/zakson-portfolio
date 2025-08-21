@@ -55,7 +55,7 @@ function App() {
       <hr></hr>
       <Explore />
       <hr></hr>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <hr></hr>
       <Contact />
       <Particle />

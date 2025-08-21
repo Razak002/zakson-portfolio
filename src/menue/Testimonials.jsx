@@ -172,7 +172,6 @@ function Testimonials() {
       >
         <h1 className="text-white text-xl sm:text-2xl md:text-3xl font-kalam flex items-center justify-center">
           Comments from clients all around the world{" "}
-          <span className="ml-2">😎</span>
         </h1>
       </motion.div>
 
