@@ -15,12 +15,12 @@
 }
 
 body.menu-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
-/* Ensure content starts below fixed navbar */
 .main-content {
-  margin-top: 5rem; /* 20 * 0.25rem = 5rem for h-20 */
+    margin-top: 5rem;
+
 }

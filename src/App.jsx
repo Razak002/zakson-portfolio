@@ -40,7 +40,7 @@ function App() {
     );
   }
   return (
-    <div className="w-full h-full cursor-pointer text-sm md:text-base pt-20">
+    <div className="w-full h-full cursor-pointer text-sm md:text-base">
       <Navbar />
       <Hero />
       <hr></hr>
@@ -55,8 +55,8 @@ function App() {
       <hr></hr>
       <Explore />
       <hr></hr>
-      <Testimonials />
-      <hr></hr>
+      {/* <Testimonials /> */}
+      {/* <hr></hr> */}
       <Contact />
       <Particle />
       {/* <ScrollToTop smooth color="white" style={{backgroundColor: "transparent"}} /> */}
