@@ -3,6 +3,7 @@ import finflow from '../assets/finflow.png'
 import gymnastic from '../assets/gymnastic.png'
 import business from '../assets/business.png'
 import swapit from '../assets/swapit.png'
+import bycrypt from '../assets/bycrypt.png'
 
 export const SOCIAL = [
   {
@@ -69,5 +70,13 @@ export const WORKS = [
     content: " Artificial Intelligence (AI) has emerged as the most transformative technology, offering unprecedented opportunities to streamline operations, enhance decision-making, and achieve goals with remarkable efficiency."
   },
 
+  {
+  id: 5,
+  image: bycrypt,
+  title: "04__ Bycrypt – Secure Crypto Wallet",
+  github: "https://github.com/Razak002/Blocksy-wallet",
+  demo: "https://blocksy-wallet.vercel.app/",
+  content: "Bycrypt is a secure and user-friendly crypto wallet designed for managing digital assets with ease. It provides wallet creation, balance tracking, and seamless transaction features, all within a responsive and modern UI built with React and Next.js."
+},
 
 ]
