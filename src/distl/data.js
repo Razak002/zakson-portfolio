@@ -4,6 +4,7 @@ import gymnastic from '../assets/gymnastic.png'
 import business from '../assets/business.png'
 import swapit from '../assets/swapit.png'
 import bycrypt from '../assets/bycrypt.png'
+import any from '../assets/any.png'
 
 export const SOCIAL = [
   {
@@ -71,12 +72,23 @@ export const WORKS = [
   },
 
   {
-  id: 5,
-  image: bycrypt,
-  title: "04__ Bycrypt – Secure Crypto Wallet",
-  github: "https://github.com/Razak002/Blocksy-wallet",
-  demo: "https://blocksy-wallet.vercel.app/",
-  content: "Bycrypt is a secure and user-friendly crypto wallet designed for managing digital assets with ease. It provides wallet creation, balance tracking, and seamless transaction features, all within a responsive and modern UI built with React and Next.js."
+    id: 5,
+    image: bycrypt,
+    title: "04__ Bycrypt – Secure Crypto Wallet",
+    github: "https://github.com/Razak002/Blocksy-wallet",
+    demo: "https://blocksy-wallet.vercel.app/",
+    content: "Bycrypt is a secure and user-friendly crypto wallet designed for managing digital assets with ease. It provides wallet creation, balance tracking, and seamless transaction features, all within a responsive and modern UI built with React and Next.js."
+  },
+
+
+{
+  id: 6,
+  image: any,
+  title: "Any2Any Universal File Converter",
+  github: "https://github.com/Razak002/any2any", 
+  demo: "https://any2any-bice.vercel.app/",
+  content:
+    "Any2Any is a free and powerful file conversion tool that allows users to seamlessly convert images, audio, and video files between multiple formats. Built with Next.js and Tailwind CSS, it delivers fast, secure, and in-browser conversions with a modern and responsive UI.",
 },
 
 ]
