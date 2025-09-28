@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+   import razakImage from "../assets/razak2.webp";
 
 function Hero() {
-  const imageUrl = "https://i.ibb.co/BK3vZT84/razak2.png";
+  const imageUrl = razakImage
 
-  // Variants for staggered animation
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -30,7 +30,6 @@ function Hero() {
         initial="hidden"
         animate="show"
       >
-        {/* Text Section */}
         <motion.div
           className="md:w-1/2 text-center md:text-left space-y-5"
           variants={container}
@@ -78,7 +77,6 @@ function Hero() {
         <motion.div
           className="md:w-1/2 flex justify-center relative mt-20 sm:mt-10"
           variants={fadeInUp}
-          whileHover={{ scale: 1.05, rotate: 2 }}
           transition={{ type: "spring", stiffness: 120 }}
         >
           <motion.img
@@ -98,66 +96,3 @@ function Hero() {
 
 export default Hero;
 
-
-// import React from "react";
-// import { Link } from "react-scroll";
-
-// function Hero() {
-//   const imageUrl = "https://i.ibb.co/BK3vZT84/razak2.png";
-
-//   return (
-//     <section
-//       id="main"
-//       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 px-6"
-//     >
-//       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
-//         {/* Text Section */}
-//         <div className="md:w-1/2 text-center md:text-left space-y-6">
-//           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-fade-in-down">
-//             Aliyu Abdulrazak
-//           </h1>
-//           <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed animate-fade-in-up">
-//             I’m a productive Software Developer with great passion. I am
-//             self-motivated, enthusiastic, and always ready to work in teams and
-//             learn more.
-//           </p>
-
-//           {/* Call to Actions */}
-//           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-//             <Link
-//               to="projects"
-//               smooth={true}
-//               duration={800}
-//               className="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium shadow-lg hover:shadow-pink-500/50 hover:scale-105 transition-all duration-300 cursor-pointer"
-//             >
-//               View Projects
-//             </Link>
-//             <Link
-//               to="contact"
-//               smooth={true}
-//               duration={800}
-//               className="px-6 py-3 rounded-lg border border-pink-500 text-pink-400 font-medium hover:bg-pink-500 hover:text-white transition-all duration-300 cursor-pointer"
-//             >
-//               Contact Me
-//             </Link>
-//           </div>
-//         </div>
-
-//         {/* Image Section */}
-//         <div className="md:w-1/2 flex justify-center relative animate-fade-in mt-10">
-//           <div className="relative group">
-//             <img
-//               src={imageUrl}
-//               alt="Aliyu Abdulrazak"
-//               className="w-64 sm:w-80 md:w-96 lg:w-[80%] rounded-2xl shadow-2xl transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-500"
-//               loading="lazy"
-//             />
-//             <div className="absolute inset-0 rounded-2xl "></div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Hero;
