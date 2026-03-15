@@ -11,7 +11,6 @@ import Skills from "./menue/Skills";
 import Project from "./menue/Project";
 import Contact from "./menue/Contact";
 import Particle from "./components/Particle";
-import Testimonials from "./menue/Testimonials";
 import Explore from "./menue/Explore";
 import { Scroll } from "./components/partials/Scroll";
 
