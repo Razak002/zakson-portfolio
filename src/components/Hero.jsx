@@ -45,7 +45,7 @@ function Hero() {
             variants={fadeInUp}
             className="text-white text-lg md:text-xl font-kalam"
           >
-            I'm a productive Software Developer with great passions. I am
+            I'm a productive Software engineer with great passions. I am
             self-motivated, enthusiastic, and always ready to work in teams and
             to learn more.
           </motion.p>
