@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import { WORKS } from "../distl/data";
@@ -21,7 +20,11 @@ function Project() {
 
   const popIn = {
     hidden: { opacity: 0, scale: 0.9 },
-    show: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
@@ -40,20 +43,19 @@ function Project() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl font-serif font-bold tracking-wide text-white drop-shadow-lg"
           >
-            Projects
+            Featured Projects
           </motion.h3>
-          <motion.h4
-            variants={fadeInUp}
-            className="text-lg mt-3 text-gray-300"
-          >
+          <motion.h4 variants={fadeInUp} className="text-lg mt-3 text-gray-300">
             ─── Page <strong className="text-white">04</strong>
           </motion.h4>
           <motion.p
             variants={fadeInUp}
             className="text-gray-300 max-w-3xl mx-auto mt-4 font-kalam text-sm md:text-lg"
           >
-            I build web apps with well-oriented user interfaces (UI), fully responsive layouts,
-            strong data protection, fast loading times, and built-in integrations.
+            I engineer scalable applications featuring optimized architectural
+            patterns, high-performance delivery, and robust end-to-end security.
+            My focus is on developing resilient back-end infrastructures paired
+            with intuitive, fully-responsive user interfaces.
           </motion.p>
         </motion.div>
 

@@ -1,46 +1,3 @@
-// import React from 'react'
-
-
-// function About() {
-//   return (
-//     <div id='about'>
-//       <div className='w-[100%] md:py-6 justify-center items-center p-2 md:p-20'>
-
-//         <div className="text-white skills-left md:text-xl font-Gothic animate__animated animate__zoomIn">
-//           <h3 className='py-4'>About</h3>
-//           <h4 className='p-2'>
-//             ───&nbsp;&nbsp;Page <strong >02</strong>
-//           </h4>
-//         </div>
-//         <p className='text-white text-left  py-3 font-kalam'>
-
-//           I'm Aliyu Abdulrazak, a passionate web developer with some years of experience crafting beautiful and functional websites. I love bringing ideas to life through code and creating seamless online experiences.
-
-//           Throughout my career, I've worked with diverse clients from various industries, helping them establish a strong online presence and achieve their digital goals, and I am constantly staying updated with the latest web development trends and technologies.
-//           </p>
-
-//           <h2 className='text-xl py-3 text-white font-openSans'>Approach and Philosophy:</h2>
-
-//         <p className='text-white text-sm font-kalam'>  I believe in a user-centric approach to web development. My goal is to create websites that are not only visually appealing but also intuitive, fast, and accessible across different devices. I prioritize clean and maintainable code, adhering to industry best practices and following the latest web standards.</p>
-
-//        <h2 className='text-xl  py-3 text-white font-openSans'>Collaboration and Communication:</h2>   
-
-//         <p className='text-white text-sm font-kalam'>  I thrive in collaborative environments, working closely with clients, designers, and other team members. I actively listen to their ideas and requirements, translating them into functional and visually captivating websites. My strong communication skills enable me to effectively convey technical concepts to non-technical stakeholders, fostering productive and smooth collaborations.</p>
-
-//         <h2 className='text-xl  py-3 text-white font-openSans'>Passion and Personal Interests:</h2>  
-
-//          <p className='text-white text-sm font-kalam'> Web development is not just a job for me; it's my passion. Outside of work, I enjoy exploring new web technologies and experimenting with personal projects. I'm also an avid blogger, where I share insights and tips on web development to contribute to the larger developer community.    </p>
-
-
-
-//       </div>
-
-//     </div>
-//   )
-// }
-
-// export default About
-
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -91,10 +48,9 @@ function About() {
           className="font-kalam text-lg leading-relaxed max-w-3xl mx-auto md:mx-0"
         >
           I'm <span className="underline font-semibold">Aliyu Abdulrazak</span>,
-          a passionate web developer with years of experience crafting beautiful and functional websites.
-          I love bringing ideas to life through code and creating seamless online experiences.
-          I've worked with clients across diverse industries, helping them build a strong online presence
-          while staying ahead with the latest web technologies.
+          a productive <span className="text-gray-300 font-bold">Software Engineer</span> with a deep passion for building robust, scalable applications. 
+          I am self-motivated and enthusiastic about architecting high-performance systems and creating seamless digital experiences. 
+          I thrive on solving complex technical challenges and staying at the forefront of modern software architecture.
         </motion.p>
 
         {/* Approach */}
@@ -102,11 +58,12 @@ function About() {
           variants={fadeInUp}
           className="space-y-3"
         >
-          <h2 className="text-2xl font-openSans">Approach & Philosophy</h2>
+          <h2 className="text-2xl font-openSans">Engineering & Philosophy</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            I believe in a <span className="underline font-semibold">user-centric approach</span> to web development.
-            My goal is to create websites that are visually appealing, intuitive, fast, and accessible on all devices.
-            I prioritize clean, maintainable code that follows industry best practices.
+            I believe in an <span className="underline font-semibold">engineering-first approach</span>. 
+            My goal is to develop software that is not only visually striking but also architecturally sound, 
+            fast, and maintainable. I prioritize clean code, scalability, and industry best practices 
+            to ensure every product is built for the long term.
           </p>
         </motion.div>
 
@@ -115,11 +72,12 @@ function About() {
           variants={fadeInUp}
           className="space-y-3"
         >
-          <h2 className="text-2xl font-openSans">Collaboration & Communication</h2>
+          <h2 className="text-2xl font-openSans">Team Dynamics & Communication</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            I thrive in collaborative environments, working closely with clients, designers, and teams.
-            I actively listen to ideas, translate them into functional designs,
-            and communicate technical concepts in a clear and approachable way.
+            I thrive in collaborative environments and am always ready to work in teams. 
+            I bridge the gap between complex technical logic and user-centric design, 
+            communicating architectural concepts clearly while actively contributing to a shared vision 
+            across cross-functional teams.
           </p>
         </motion.div>
 
@@ -128,12 +86,11 @@ function About() {
           variants={fadeInUp}
           className="space-y-3"
         >
-          <h2 className="text-2xl font-openSans">Passion & Personal Interests</h2>
+          <h2 className="text-2xl font-openSans">Continuous Growth</h2>
           <p className="font-kalam text-base opacity-90 max-w-3xl leading-relaxed">
-            Web development isn’t just my job — it’s my{" "}
-            <span className="underline font-semibold">passion</span>.
-            Outside of work, I explore new technologies, work on personal projects,
-            and share knowledge through blogging to help the developer community grow.
+            For me, software engineering is a lifelong <span className="underline font-semibold">passion</span>. 
+            Outside of core development, I am always ready to learn more, exploring low-level systems, 
+            contributing to open source, and sharing technical insights with the global developer community.
           </p>
         </motion.div>
       </motion.div>

@@ -45,9 +45,7 @@ function Hero() {
             variants={fadeInUp}
             className="text-white text-lg md:text-xl font-kalam"
           >
-            I'm a productive Software engineer with great passions. I am
-            self-motivated, enthusiastic, and always ready to work in teams and
-            to learn more.
+            Results-driven Software Engineer with a focus on efficiency and innovation. Enthusiastic about collaborative problem-solving and committed to continuous learning in the ever-evolving tech landscape
           </motion.p>
 
           <motion.div
